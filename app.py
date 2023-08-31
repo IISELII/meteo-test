@@ -3,8 +3,7 @@ import pydeck as pdk
 import requests
 
 # Configuration de l'API météo
-# API_KEY = st.secrets["API_KEY"]
-API_KEY = '4ad9f7e8f81acbf1697cbb1860bac9c1'
+API_KEY = st.secrets["API_KEY"]
 BASE_URL = "http://api.openweathermap.org/data/2.5/forecast"
 
 def get_weather(city):

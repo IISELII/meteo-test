@@ -3,7 +3,6 @@ import streamlit as st
 
 BASE_URL = "https://api.openweathermap.org/data/2.5/forecast"
 API_KEY = st.secrets["API_KEY"]
-API_KEY = '4ad9f7e8f81acbf1697cbb1860bac9c1'
 
 def get_weather(city, API_KEY):
     params = {

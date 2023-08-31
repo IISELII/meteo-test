@@ -9,7 +9,7 @@ def test_get_weather(mocker):
     }
     mocker.patch.object(requests, 'get', return_value=mock_response)
 
-    API_KEY = '4ad9f7e8f81acbf1697cbb1860bac9c1'
+    API_KEY = st.secrets["API_KEY"]
     city = "Paris"
     coords, today, tomorrow, day_after_tomorrow = get_weather(city, API_KEY)
 
